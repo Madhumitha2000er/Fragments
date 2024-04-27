@@ -1,0 +1,45 @@
+
+<core:FragmentDefinition xmlns:core="sap.ui.core" xmlns="sap.m" xmlns:form="sap.ui.layout.form">
+ 
+<Dialog title="Sign In">
+  <content>
+    <form:SimpleForm  id="idSimpleForm1" editable="true"
+        labelSpanXL="4"
+			labelSpanL="4"
+			labelSpanM="4"
+			labelSpanS="12"
+			adjustLabelSpan="false"
+			emptySpanXL="0"
+			emptySpanL="0"
+			emptySpanM="0"
+			emptySpanS="0"
+			columnsXL="3"
+			columnsL="2"
+			columnsM="2"
+        >
+        <form:content>
+        <Label  text="Email" required="true"></Label>
+        <Input type="Email" maxLength="5"></Input>
+
+        <Label  text="Password" ></Label>
+        <Input type="Password" ></Input>
+
+        <Button text="Sign in" type="Default" ></Button>
+        </form:content>
+    </form:SimpleForm>
+ </content>
+    <endButton>
+       <Button text="Cancel" press="onCloseDialog"></Button>
+    </endButton>
+</Dialog>
+        
+        
+
+        
+        
+        
+        
+
+
+
+</core:FragmentDefinition>
